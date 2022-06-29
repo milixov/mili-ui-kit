@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 interface Props {
     title: string
@@ -14,3 +15,7 @@ const Label = (props: Props) => {
 }
 
 export default Label;
+
+Label.propTypes = {
+    title: PropTypes.string.isRequired,
+};
